@@ -1,3 +1,4 @@
+using Bandages.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -8,8 +9,8 @@ namespace Bandages.Recipes
 	{
 		public override void AddRecipes()
 		{
-			Mod calamity;
-			if (ModLoader.TryGetMod("CalamityMod", out calamity))
+			Mod calamity = ModCheck.CalamityMod;
+			if (calamity != null)
 			{
 				if (calamity.TryFind<ModItem>("Equanimity", out ModItem equanimity))
 				{
