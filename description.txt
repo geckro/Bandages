@@ -1,0 +1,2 @@
+The bandages mod tries to create "bandages" to the game depending on what mods you have enabled to create for better cross-mod compability and to make mods play better together!
+

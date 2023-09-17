@@ -1,0 +1,3 @@
+displayName = Bandages Mod
+author = geckronome
+version = 0.1

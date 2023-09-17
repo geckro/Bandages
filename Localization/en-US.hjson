@@ -1,0 +1,13 @@
+// EVERY TIME I RELOAD THIS FILE IT BREAKS THANKS TMODLOADER!!!!!!!!!!!!
+
+
+Mods: {
+	ThoriumMod: {
+		Items: {
+			Terrarium.TerrariumWings.Tooltip: Test
+			TerrariumWings.Tooltip: Test
+		}
+
+		TerrariumWings.Tooltip: Test
+	}
+}
