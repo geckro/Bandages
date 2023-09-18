@@ -13,5 +13,25 @@ namespace Bandages.Common.Config
         [DefaultValue(true)] 
         [ReloadRequired]
         public bool AddRecipesToVanillaItems;
+        
+        [DefaultValue(true)] 
+        [ReloadRequired]
+        public bool RebalanceVanilla;
+        
+        [Header("ModTweaks")]
+        
+        [DefaultValue(true)] 
+        [ReloadRequired]
+        public bool Calamity;
+        
+        [Header("Compatibility")]
+        
+        [DefaultValue(true)] 
+        [ReloadRequired]
+        public bool CalamityThorium;
+        
+        [DefaultValue(true)] 
+        [ReloadRequired]
+        public bool CalamityFargowiltas;
     }
 }

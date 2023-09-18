@@ -1,11 +1,15 @@
+using Bandages.Common.Config;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Bandages.Recipes
+namespace Bandages.Content.Recipes
 {
 	public class Any : ModSystem
 	{
+		public override bool IsLoadingEnabled(Mod mod) {
+			return ModContent.GetInstance<Config>().RebalanceVanilla;
+		}
 		public override void PostAddRecipes()
 		{
 			for (int i = 0; i < Recipe.numRecipes; i++)

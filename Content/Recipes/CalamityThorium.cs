@@ -1,12 +1,16 @@
 using Bandages.Common;
+using Bandages.Common.Config;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Bandages.Recipes
+namespace Bandages.Content.Recipes
 {
     public class ThoriumToCalamityRecipes : ModSystem
     {
+        public override bool IsLoadingEnabled(Mod mod) {
+            return ModContent.GetInstance<Config>().CalamityThorium;
+        }
         public override void AddRecipes()
         {
             Mod thorium = ModCheck.ThoriumMod;
@@ -34,6 +38,9 @@ namespace Bandages.Recipes
 
     public class ThoriumEditCalamityItems : ModSystem
     {
+        public override bool IsLoadingEnabled(Mod mod) {
+            return ModContent.GetInstance<Config>().CalamityThorium;
+        }
         public override void PostAddRecipes()
         {
             Mod thorium = ModCheck.ThoriumMod;
@@ -89,6 +96,9 @@ namespace Bandages.Recipes
 
     public class CalamityEditThoriumItems : ModSystem
     {
+        public override bool IsLoadingEnabled(Mod mod) {
+            return ModContent.GetInstance<Config>().CalamityThorium;
+        }
         public override void PostAddRecipes()
         {
             Mod thorium = ModCheck.ThoriumMod;
@@ -132,6 +142,9 @@ namespace Bandages.Recipes
      */
     public class ThoriumEditItems : GlobalItem
     {
+        public override bool IsLoadingEnabled(Mod mod) {
+            return ModContent.GetInstance<Config>().CalamityThorium;
+        }
         public class ThoriumPax : GlobalItem
         {
             public override bool AppliesToEntity(Item item, bool lateInstatiation)

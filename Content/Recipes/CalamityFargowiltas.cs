@@ -1,12 +1,16 @@
 using Bandages.Common;
+using Bandages.Common.Config;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Bandages.Recipes
+namespace Bandages.Content.Recipes
 {
     public class FargosAddCrucibleToCalamityItems : ModSystem
     {
+        public override bool IsLoadingEnabled(Mod mod) {
+            return ModContent.GetInstance<Config>().CalamityFargowiltas;
+        }
         public override void PostAddRecipes()
         {
             Mod fargos = ModCheck.FargosMod;

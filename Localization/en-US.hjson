@@ -15,11 +15,36 @@ Mods: {
 		Configs: {
 			Config: {
 				DisplayName: Config
-				Headers.General: General Header
+
+				Headers: {
+					General: Vanilla Tweaks
+					ModTweaks: Singular Mod Tweaks
+					Compatibility: Multiple Mods / Compatibility
+				}
 
 				AddRecipesToVanillaItems: {
 					Label: "[i:53] Add Recipes To Vanilla Items"
 					Tooltip: Add various recipes to obtain various vanilla items. Turn off if you do not want this behaviour or use other recipe mods.
+				}
+
+				RebalanceVanilla: {
+					Label: "[i:3625] Rebalance Vanilla Recipes"
+					Tooltip: "Rebalances some recipes to make them craftable at only the stage of the game that they were meant to. Fixes some oversights and is a safeguard for mods."
+				}
+
+				Calamity: {
+					Label: "[i:4533] Calamity Tweaking"
+					Tooltip: "Adds some Calamity Mod recipes if the mod is enabled."
+				}
+
+				CalamityThorium: {
+					Label: "Calamity + Thorium Compatibility"
+					Tooltip: "Adds multimod support to Calamity and Thorium."
+				}
+
+				CalamityFargowiltas: {
+					Label: "Calamity + Fargo's Mutant Mod Compatibility"
+					Tooltip: "Adds multimod support to Calamity and Fargowiltas."
 				}
 			}
 		}
