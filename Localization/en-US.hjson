@@ -10,4 +10,18 @@ Mods: {
 
 		TerrariumWings.Tooltip: Test
 	}
+
+	Bandages: {
+		Configs: {
+			Config: {
+				DisplayName: Config
+				Headers.General: General Header
+
+				AddRecipesToVanillaItems: {
+					Label: "[i:53] Add Recipes To Vanilla Items"
+					Tooltip: Add various recipes to obtain various vanilla items. Turn off if you do not want this behaviour or use other recipe mods.
+				}
+			}
+		}
+	}
 }
